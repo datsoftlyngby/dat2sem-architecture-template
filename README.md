@@ -89,12 +89,12 @@ Meaning that only classes from the same package can see them.
 
 ### The *Command* pattern
 
-Use a Command pattern when want to be able to choose between
+Use a Command pattern when you want to be able to choose between
 different methods at runtime,
 and you want to encapsulate the logic of choosing the method
 and the number of methods to choose from.
 
-The idea is to embed the methods in objects all implementin a common command interface.
+The idea is to embed the methods in objects; all implementing a common command interface.
 All methods shall of course have the same signature and return type.
 
 ```Java
@@ -132,7 +132,7 @@ Note that:
 ### The *Factory* pattern
 
 Instantiation of classes (making `new` objects) is one of the things
-that cannot be done in a polymorhic way. You can treat triangles, cubes, circles,
+that cannot be done in a polymorphic way. You can treat triangles, cubes, circles,
 and rectangles as shapes in an object-oriented language.
 You don't need to know the type to get the area of shape as long as it implements the `getArea()`
 method. In the same way as we don't need which `Command` we are dealing with to
