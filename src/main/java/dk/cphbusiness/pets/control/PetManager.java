@@ -1,8 +1,8 @@
-package dk.cphbusiness.pets.logic;
+package dk.cphbusiness.pets.control;
 
-import dk.cphbusiness.pets.data.HashPetMapper;
-import dk.cphbusiness.pets.data.Pet;
-import dk.cphbusiness.pets.data.PetMapper;
+import dk.cphbusiness.pets.model.HashPetMapper;
+import dk.cphbusiness.pets.model.Pet;
+import dk.cphbusiness.pets.model.PetMapper;
 import java.util.Collection;
 
 public class PetManager {

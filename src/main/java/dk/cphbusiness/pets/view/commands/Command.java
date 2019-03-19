@@ -1,6 +1,6 @@
-package dk.cphbusiness.pets.presentation;
+package dk.cphbusiness.pets.view.commands;
 
-import dk.cphbusiness.pets.logic.PetManager;
+import dk.cphbusiness.pets.control.PetManager;
 import javax.servlet.http.HttpServletRequest;
 
 public interface Command {

@@ -1,4 +1,4 @@
-package dk.cphbusiness.pets.data;
+package dk.cphbusiness.pets.model;
 
 import java.util.Collection;
 import java.util.HashMap;

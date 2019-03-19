@@ -1,7 +1,7 @@
-package dk.cphbusiness.pets.presentation;
+package dk.cphbusiness.pets.view.commands;
 
-import dk.cphbusiness.pets.data.Pet;
-import dk.cphbusiness.pets.logic.PetManager;
+import dk.cphbusiness.pets.model.Pet;
+import dk.cphbusiness.pets.control.PetManager;
 import java.util.Collection;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;

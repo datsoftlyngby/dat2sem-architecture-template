@@ -1,4 +1,4 @@
-package dk.cphbusiness.pets.data;
+package dk.cphbusiness.pets.model;
 
 public class Pet {
   private int id;

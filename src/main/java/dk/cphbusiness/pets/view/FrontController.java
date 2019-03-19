@@ -1,7 +1,9 @@
-package dk.cphbusiness.pets.presentation;
+package dk.cphbusiness.pets.view;
 
-import dk.cphbusiness.pets.data.Pet;
-import dk.cphbusiness.pets.logic.PetManager;
+import dk.cphbusiness.pets.view.commands.Command;
+import dk.cphbusiness.pets.view.commands.ListCommand;
+import dk.cphbusiness.pets.model.Pet;
+import dk.cphbusiness.pets.control.PetManager;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
@@ -15,12 +17,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "PetServlet", urlPatterns = {"/PetServlet"})
-public class PetServlet extends HttpServlet {
+public class FrontController extends HttpServlet {
   private PetManager manager = new PetManager();
   
   private Map<String, Command> commands = new HashMap<>();
   
-  public PetServlet() {
+  public FrontController() {
     commands.put("list", new ListCommand("list.jsp"));
     // commands.put("create", new CreateCommand("edit.jsp"));
     }
