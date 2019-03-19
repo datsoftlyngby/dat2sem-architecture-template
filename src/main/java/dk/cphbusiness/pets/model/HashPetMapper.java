@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashPetMapper implements PetMapper {
+class HashPetMapper extends PetMapper {
   private static HashPetMapper instance = null;
   private final Map<Integer, Pet> pets = new HashMap<>();
   private int nextId = 1;
@@ -14,7 +14,6 @@ public class HashPetMapper implements PetMapper {
     save(new Pet(0, "Felix", 9));
     save(new Pet(0, "Ninus", 5));
     save(new Pet(0, "Piphans", 3));
-
     }
   
   public synchronized static HashPetMapper getInstance() {
@@ -23,17 +22,17 @@ public class HashPetMapper implements PetMapper {
     }
   
   @Override
-  public Collection<Pet> list() {
+  public final Collection<Pet> list() {
     return pets.values();
     }
 
   @Override
-  public Pet find(int id) {
+  public final Pet find(int id) {
     return pets.get(id);
     }
 
   @Override
-  public Pet save(Pet pet) {
+  public final Pet save(Pet pet) {
     if (pet.getId() == 0) pet.setId(nextId++);
     pets.put(pet.getId(), pet);
     return pet;

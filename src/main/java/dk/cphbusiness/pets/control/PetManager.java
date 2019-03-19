@@ -1,13 +1,11 @@
 package dk.cphbusiness.pets.control;
 
-import dk.cphbusiness.pets.model.HashPetMapper;
 import dk.cphbusiness.pets.model.Pet;
 import dk.cphbusiness.pets.model.PetMapper;
 import java.util.Collection;
 
 public class PetManager {
-  private PetMapper mapper = HashPetMapper.getInstance();
- 
+  private final PetMapper mapper = PetMapper.instance();
   
   public Collection<Pet> list() {
     return mapper.list();

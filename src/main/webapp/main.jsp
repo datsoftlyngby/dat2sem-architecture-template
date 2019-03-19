@@ -8,7 +8,7 @@
   <body>
     <h1>Main</h1>
     <hr/>
-    <form action="" method="get">
+    <form action="PetServlet" method="get">
       <button name="command" value="list">List Pets</button>
       <button name="command" value="create">Create Pet</button>
     </form>
