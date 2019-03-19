@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dk.cphbusiness</groupId>
-    <artifactId>Modul3architecture</artifactId>
+    <artifactId>module-3-pets</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Modul3architecture</name>
+    <name>module-3-pets</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
