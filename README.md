@@ -1,4 +1,4 @@
-# Module 3 Architecture example project
+# Architecture Template
 
 The project implements a very simple web-application.
 The following state machine models the site map:
